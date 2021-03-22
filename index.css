@@ -687,6 +687,12 @@ main {
 	display: none;
 }
 
+.link__item:active,
+.link__item:focus {
+	color: blue;
+	background-color: #dffcee;
+}
+
 @media screen and (max-width: 520px) {
 	.app__container {
 		display: grid;

@@ -4,7 +4,6 @@ const modal = document.getElementById("modal__container");
 const closeSidebarBtn = document.getElementById("close-sidebar-icon");
 const clickSidebar = document.getElementById("click-sidebar");
 const openSidebarIcon = document.getElementById("open-sidebar-icon");
-const x = window.matchMedia("(min-width: 900px)");
 
 openModalBtn.addEventListener("click", () => {
 	modal.style.display = "flex";

@@ -436,6 +436,7 @@ main {
 	width: 100%;
 	height: 100%;
 	border-radius: 10px 10px 0 0;
+	padding: 0.5rem;
 }
 
 .highlighted__price {
@@ -691,6 +692,13 @@ main {
 .link__item:focus {
 	color: blue;
 	background-color: #dffcee;
+}
+
+.iframe__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
 }
 
 @media screen and (max-width: 520px) {

@@ -2,7 +2,7 @@ const openModalBtn = document.getElementById("open__modal");
 const closeModalBtn = document.getElementById("close__modal");
 const modal = document.getElementById("modal__container");
 const closeSidebarBtn = document.getElementById("close-sidebar-icon");
-const clickSidebar = document.getElementById("click-sidebar");
+const mobileSidebar = document.getElementById("mobile-sidebar");
 const openSidebarIcon = document.getElementById("open-sidebar-icon");
 
 openModalBtn.addEventListener("click", () => {
@@ -14,6 +14,7 @@ openModalBtn.addEventListener("click", () => {
 	modal.style.height = "100vh";
 	modal.style.width = "100%";
 	modal.style.backgroundColor = "rgba(0, 0, 0, 0.25)";
+	modal.style.zIndex = "10";
 });
 
 closeModalBtn.addEventListener("click", () => {
@@ -21,11 +22,11 @@ closeModalBtn.addEventListener("click", () => {
 });
 
 closeSidebarBtn.addEventListener("click", () => {
-	clickSidebar.style.display = "none";
+	mobileSidebar.style.display = "none";
 });
 
 openSidebarIcon.addEventListener("click", () => {
-	clickSidebar.style.display = "flex";
+	mobileSidebar.style.display = "flex";
 });
 
 modal.addEventListener("click", (e) => {

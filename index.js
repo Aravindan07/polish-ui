@@ -4,6 +4,37 @@ const modal = document.getElementById("modal__container");
 const closeSidebarBtn = document.getElementById("close-sidebar-icon");
 const mobileSidebar = document.getElementById("mobile-sidebar");
 const openSidebarIcon = document.getElementById("open-sidebar-icon");
+const mobileListItem = document.querySelectorAll(".sidepane-list-item");
+const sidebarLinkActive = document.querySelectorAll(".sidepane-list-item-active");
+const sidebarLinkActiveElements = document.querySelectorAll(".link-active");
+
+// function myFunction(e) {
+// 	[].forEach.call(sidebarLinkActiveElements, function (el) {
+// 		el.classList.remove("link-active");
+// 	});
+// 	e.target.className = "link-active";
+// }
+
+// function test() {
+// 	for (let i = 0; i < sidebarLinkActive.length; i++) {
+// 		// sidebarLinkActive[i].classList.remove("link-active");
+// 		console.log("sidebarLinkActive", sidebarLinkActive[i].classList);
+// 		if (sidebarLinkActiveElements) {
+// 			console.log("sidebarLinkActiveElements", sidebarLinkActiveElements);
+// 			sidebarLinkActiveElements.classList.remove(".link-active");
+// 		}
+// 		sidebarLinkActive[i].addEventListener("click", () => {
+// 			sidebarLinkActive[i].classList.add("link-active");
+// 		});
+// 	}
+// }
+
+// sidebarLinkActive.filter(el => {
+// 	el.addEventListener('click', () => {
+
+// 	})
+// 	if(el.classList)
+// })
 
 openModalBtn.addEventListener("click", () => {
 	modal.style.display = "flex";
@@ -28,6 +59,12 @@ closeSidebarBtn.addEventListener("click", () => {
 openSidebarIcon.addEventListener("click", () => {
 	mobileSidebar.style.display = "flex";
 });
+
+for (let i = 0; i < mobileListItem.length; i++) {
+	mobileListItem[i].addEventListener("click", () => {
+		mobileSidebar.style.display = "none";
+	});
+}
 
 modal.addEventListener("click", (e) => {
 	if (e.target === modal) {

@@ -80,6 +80,10 @@ body {
 	padding: 2rem;
 }
 
+.padding-trl-large {
+	padding: 2rem 2rem 0 2rem;
+}
+
 .color_white {
 	color: var(--background-color);
 }
@@ -150,6 +154,7 @@ body {
 	top: 0;
 	z-index: 3;
 	padding: 0.5rem;
+	box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.4);
 }
 
 .nav__image {
@@ -191,18 +196,21 @@ body {
 	list-style: none;
 }
 
+.list__item:focus {
+	color: blue;
+}
+
 .sidepane-list-item {
-	/* background-color: #d1fae5; */
 	border-radius: 5px;
 }
 
 .sidepane-list-item:hover {
-	/* background-color: #ecfdf5; */
 	background-color: #dffcee;
 }
 
-.sidepane-list-item-active:active {
+.sidepane-list-item:target {
 	background-color: #d1fae5;
+	color: blue;
 }
 
 .navbar-contact-img {
@@ -214,8 +222,17 @@ body {
 }
 
 .link__item {
+	display: block;
 	color: var(--font-color);
 	text-decoration: none;
+}
+
+.link__item:target {
+	color: red;
+}
+
+.link-active {
+	background-color: sienna;
 }
 
 .button {
@@ -455,6 +472,10 @@ main {
 	margin-left: 0.5rem;
 }
 
+.footer-img {
+	height: 1rem;
+}
+
 .img__medium {
 	width: 300px;
 	height: 200px;
@@ -663,7 +684,7 @@ main {
 	border: 2px solid var(--alert-error-background);
 }
 
-#click-sidebar {
+#mobile-sidebar {
 	display: none;
 }
 
@@ -671,17 +692,25 @@ main {
 	display: none;
 }
 
-.link__item:active,
-.link__item:focus {
-	color: blue;
-	background-color: #dffcee;
+.footer {
+	width: 100%;
+	min-height: 60px;
+	color: var(--font-color);
+	position: relative;
+	margin-top: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 0;
 }
 
-.iframe__container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: auto;
+.footer-contact-img {
+	height: 1.8rem;
+	width: 1.8rem;
+}
+
+.footer-img-padding {
+	padding: 0 0.5rem;
 }
 
 @media screen and (max-width: 520px) {
@@ -700,6 +729,7 @@ main {
 	}
 	.navbar {
 		min-height: 90px;
+		box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.4);
 	}
 
 	.nav__image__text__container {
@@ -781,9 +811,9 @@ main {
 		border-radius: 50%;
 	}
 
-	#mobile-sidebar {
+	/* #mobile-sidebar {
 		display: none;
-	}
+	} */
 	.close-icon-div {
 		width: 100%;
 		height: 2rem;
@@ -819,7 +849,7 @@ main {
 	.mobile-sidebar {
 		width: 70%;
 		height: 100%;
-		display: flex;
+		/* display: flex; */
 		align-items: center;
 		flex-wrap: wrap;
 		padding: 0.5rem;

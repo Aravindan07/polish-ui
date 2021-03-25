@@ -72,7 +72,7 @@ body {
 	padding: 0 1.5rem;
 }
 
-.padding_medium {
+.padding__medium {
 	padding: 0.5rem 1.5rem;
 }
 
@@ -208,11 +208,6 @@ body {
 	background-color: #dffcee;
 }
 
-.sidepane-list-item:target {
-	background-color: #d1fae5;
-	color: blue;
-}
-
 .navbar-contact-img {
 	height: 100%;
 }
@@ -227,12 +222,9 @@ body {
 	text-decoration: none;
 }
 
-.link__item:target {
-	color: red;
-}
-
 .link-active {
-	background-color: sienna;
+	background-color: #d1fae5;
+	border-radius: 5px;
 }
 
 .button {
@@ -811,9 +803,6 @@ main {
 		border-radius: 50%;
 	}
 
-	/* #mobile-sidebar {
-		display: none;
-	} */
 	.close-icon-div {
 		width: 100%;
 		height: 2rem;
@@ -849,7 +838,6 @@ main {
 	.mobile-sidebar {
 		width: 70%;
 		height: 100%;
-		/* display: flex; */
 		align-items: center;
 		flex-wrap: wrap;
 		padding: 0.5rem;

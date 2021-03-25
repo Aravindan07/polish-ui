@@ -8,33 +8,15 @@ const mobileListItem = document.querySelectorAll(".sidepane-list-item");
 const sidebarLinkActive = document.querySelectorAll(".sidepane-list-item-active");
 const sidebarLinkActiveElements = document.querySelectorAll(".link-active");
 
-// function myFunction(e) {
-// 	[].forEach.call(sidebarLinkActiveElements, function (el) {
-// 		el.classList.remove("link-active");
-// 	});
-// 	e.target.className = "link-active";
-// }
+var prevItem = null;
 
-// function test() {
-// 	for (let i = 0; i < sidebarLinkActive.length; i++) {
-// 		// sidebarLinkActive[i].classList.remove("link-active");
-// 		console.log("sidebarLinkActive", sidebarLinkActive[i].classList);
-// 		if (sidebarLinkActiveElements) {
-// 			console.log("sidebarLinkActiveElements", sidebarLinkActiveElements);
-// 			sidebarLinkActiveElements.classList.remove(".link-active");
-// 		}
-// 		sidebarLinkActive[i].addEventListener("click", () => {
-// 			sidebarLinkActive[i].classList.add("link-active");
-// 		});
-// 	}
-// }
-
-// sidebarLinkActive.filter(el => {
-// 	el.addEventListener('click', () => {
-
-// 	})
-// 	if(el.classList)
-// })
+function activateItem(target) {
+	if (prevItem != null) {
+		prevItem.className = prevItem.className.replace(" link-active", "");
+	}
+	target.className += " link-active";
+	prevItem = target;
+}
 
 openModalBtn.addEventListener("click", () => {
 	modal.style.display = "flex";

@@ -7,6 +7,29 @@ const openSidebarIcon = document.getElementById("open-sidebar-icon");
 const mobileListItem = document.querySelectorAll(".sidepane-list-item");
 const sidebarLinkActive = document.querySelectorAll(".sidepane-list-item-active");
 const sidebarLinkActiveElements = document.querySelectorAll(".link-active");
+const nameId = document.getElementById("name");
+const inputLabel = document.querySelector(".input__label");
+const inputControl = document.querySelector(".input__control");
+const inputWrap = document.querySelector(".input__wrap");
+
+inputControl.addEventListener("focus", () => {
+	inputLabel.style.transform = "translate(15px, -12px) scale(1)";
+	inputLabel.style.color = "var(--primary-color)";
+	inputControl.style.border = "1px solid var(--primary-color)";
+});
+
+function testInput(e) {
+	nameId.value = e.value;
+	if (nameId.value !== "") {
+		inputLabel.style.transform = "translate(15px, -12px) scale(1)";
+		inputLabel.style.color = "var(--primary-color)";
+		inputControl.style.border = "1px solid var(--primary-color)";
+	} else {
+		inputLabel.style.transform = "translate(15px, 14px) scale(1)";
+		inputLabel.style.color = "var(--font-color)";
+		inputControl.style.border = "1px solid var(--font-color)";
+	}
+}
 
 var prevItem = null;
 

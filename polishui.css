@@ -33,6 +33,8 @@
 	--badge-warning-color: #fcd34d;
 	--badge-success-color: #15b996;
 	--badge-error-color: #d1d5db;
+	--border-size-5: 5px;
+	--border-size-10: 10px;
 }
 
 * {
@@ -227,6 +229,14 @@ body {
 
 .mr-12 {
 	margin-right: var(--margin-size-12);
+}
+
+.border-5 {
+	border-radius: var(--border-size-5);
+}
+
+.border-10 {
+	border-radius: var(--border-size-10);
 }
 
 .heading {

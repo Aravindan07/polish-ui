@@ -24,6 +24,7 @@
 	--margin-size-two-rem: 2rem;
 	--margin-size-12: 0.7rem;
 	--line-height-normal: 1.8;
+	--padding-size-one-rem: 1rem;
 	--padding-size-one-and-a-half-rem: 1.5rem;
 	--padding-size-8: 0.5rem;
 	--padding-size-32: 2rem;
@@ -90,6 +91,22 @@ body {
 
 .lh-normal {
 	line-height: var(--line-height-normal);
+}
+
+.padding-l16 {
+	padding-left: var(--padding-size-one-rem);
+}
+
+.padding-r16 {
+	padding-right: var(--padding-size-one-rem);
+}
+
+.padding-t16 {
+	padding-top: var(--padding-size-one-rem);
+}
+
+.padding-b16 {
+	padding-bottom: var(--padding-size-one-rem);
 }
 
 .padding-l24 {

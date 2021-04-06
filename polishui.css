@@ -163,6 +163,22 @@ body {
 	color: var(--background-color);
 }
 
+.color-red {
+	color: var(--complementary-color);
+}
+
+.color-success {
+	color: var(--primary-color);
+}
+
+.color-error {
+	color: var(--gray-text-color);
+}
+
+.color-warning {
+	color: var(--badge-warning-color);
+}
+
 .ls-1 {
 	letter-spacing: var(--letter-spacing-1px);
 }
@@ -453,6 +469,10 @@ body {
 
 .outlined--button:hover {
 	background: #dffcee;
+}
+
+.display-block {
+	display: block;
 }
 
 .flex-row-space-between {
@@ -1078,8 +1098,8 @@ main {
 	}
 
 	.nav-icon-dimensions {
-		width: 20px;
-		height: 20px;
+		width: 25px;
+		height: 25px;
 	}
 
 	.nav-icon-dimensions svg {

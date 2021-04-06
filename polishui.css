@@ -1074,7 +1074,7 @@ main {
 	}
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
 	.app__container {
 		display: grid;
 		grid-template-columns: 100%;
@@ -1137,7 +1137,7 @@ main {
 	}
 }
 
-@media screen and (max-width: 680px) {
+@media only screen and (max-width: 680px) {
 	.search__wrap {
 		display: none;
 	}
@@ -1150,7 +1150,7 @@ main {
 	}
 }
 
-@media screen and (min-width: 901px) {
+@media only screen and (min-width: 901px) {
 	.nav-icon-dimensions {
 		width: 25px;
 		height: 25px;

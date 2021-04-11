@@ -29,7 +29,10 @@
 	--padding-size-8: 0.5rem;
 	--padding-size-32: 2rem;
 	--letter-spacing-1px: 1px;
+	--letter-spacing-half-px: 0.5px;
+	--letter-spacing-medium-px: 0.8px;
 	--gray-text-color: rgba(5, 46, 37, 0.4);
+	--gray-text-dark-mode-color: #6b7280;
 	--badge-warning-color: #fcd34d;
 	--badge-success-color: #15b996;
 	--badge-error-color: #d1d5db;
@@ -183,12 +186,24 @@ body {
 	letter-spacing: var(--letter-spacing-1px);
 }
 
+.ls-half-px {
+	letter-spacing: var(--letter-spacing-half-px);
+}
+
+.ls-medium-px {
+	letter-spacing: var(--letter-spacing-medium-px);
+}
+
 .text-center {
 	text-align: center;
 }
 
 .gray-text {
 	color: var(--gray-text-color);
+}
+
+.gray-text-dark-mode {
+	color: var(--gray-text-dark-mode-color);
 }
 
 .text-uppercase {
@@ -517,6 +532,20 @@ body {
 	flex-wrap: wrap;
 }
 
+.flex-row {
+	display: flex;
+}
+
+.flex-row-align-center {
+	display: flex;
+	align-items: center;
+}
+
+.flex-row-justify-center {
+	display: flex;
+	justify-content: center;
+}
+
 .flex-col {
 	display: flex;
 	flex-direction: column;
@@ -721,6 +750,10 @@ main {
 
 .br-10 {
 	border-radius: 10px;
+}
+
+.br-5 {
+	border-radius: 5px;
 }
 
 .input__control {

@@ -70,6 +70,10 @@ body {
 	width: 100%;
 }
 
+.w80 {
+	width: 80%;
+}
+
 .c-pointer {
 	cursor: pointer;
 }

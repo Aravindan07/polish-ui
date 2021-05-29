@@ -542,21 +542,25 @@ body {
 
 .flex-row {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .flex-row-align-center {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .flex-row-justify-center {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .flex-col {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .flex-col-center {
